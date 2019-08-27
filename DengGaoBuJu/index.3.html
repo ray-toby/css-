@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>等高布局（使用边框和定位）</title>
+    <style>
+        .wrapper{
+            width: 960px;
+            margin: 0 auto;
+        }
+        .mainContent{
+            border-right: 220px solide blue;
+            position: absolute;
+            width: 740px;
+            height: 800px;
+            background: green;
+        }
+        .sideBar{
+            background: blue;
+            margin-left: 740px;
+            position: absolute;
+            height: 800px;
+            width: 220px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="mainContent">....</div>
+        <div class="sideBar">.....</div>
+    </div>
+</body>
+</html>

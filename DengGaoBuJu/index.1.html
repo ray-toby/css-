@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>等高布局（利用背景图片）</title>
+    <style>
+        .container{
+            background: url('./640.jpg') repeat-y;
+            width: 960px;
+            margin: 0 auto;
+        }
+        .left{
+            float: left;
+            width: 220px;
+            background: red;
+        }
+        .content{
+            float: left;
+            width: 480px;
+            background: green;
+        }
+        .right{
+           float: left;
+           width: 220px;
+           background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="left">left</div>
+        <div class="content">content</div>
+        <div class="right">right</div>
+    </div>
+</body>
+</html>
